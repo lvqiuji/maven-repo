@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.apache.tomcat.maven</groupId>
+  <artifactId>tomcat7-maven-plugin</artifactId>
+  <version>2.0-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20111106.142025</timestamp>
+      <buildNumber>18</buildNumber>
+    </snapshot>
+    <lastUpdated>20111106142025</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>2.0-20111106.142025-18</value>
+        <updated>20111106142025</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>2.0-20111106.142025-18</value>
+        <updated>20111106142025</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

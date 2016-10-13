@@ -1,0 +1,147 @@
+﻿<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.wechat.mywechat</groupId>
+  <artifactId>mywechat</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>mywechat Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.10</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+		<dependency>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>javax.servlet-api</artifactId>
+	    <version>3.0.1</version>
+	    <scope>compile</scope>
+		</dependency>
+		<dependency> 
+		<groupId>org.springframework</groupId>  
+		<artifactId>spring-webmvc</artifactId>  
+		<version>${spring.version}</version>  
+		</dependency>  
+		<dependency>  
+		    <groupId>org.springframework</groupId>  
+		    <artifactId>spring-jdbc</artifactId>  
+		    <version>${spring.version}</version>  
+		</dependency>  
+		  
+		<dependency>  
+		    <groupId>org.springframework</groupId>  
+		    <artifactId>spring-context</artifactId>  
+		    <version>${spring.version}</version>  
+		</dependency>  
+		  
+		<dependency>  
+		    <groupId>org.springframework</groupId>  
+		    <artifactId>spring-aop</artifactId>  
+		    <version>${spring.version}</version>  
+		</dependency>  
+		  
+		<dependency>  
+		    <groupId>org.springframework</groupId>  
+		    <artifactId>spring-core</artifactId>  
+		    <version>${spring.version}</version>  
+		</dependency>  
+		  
+		<dependency>  
+		    <groupId>org.springframework</groupId>  
+		    <artifactId>spring-test</artifactId>  
+		    <version>${spring.version}</version>  
+		</dependency>  
+		<!-- https://mvnrepository.com/artifact/dom4j/dom4j -->
+		<dependency>
+    		<groupId>dom4j</groupId>
+    		<artifactId>dom4j</artifactId>
+    		<version>1.6.1</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.thoughtworks.xstream</groupId>
+		    <artifactId>xstream</artifactId>
+		    <version>1.3.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/net.sf.json-lib/json-lib -->
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<version>2.4</version>
+			<classifier>jdk15</classifier>
+		</dependency>
+		
+  </dependencies>
+  <build>
+    <finalName>mywechat</finalName>
+    <pluginManagement>  
+        <plugins>  
+        	<plugin>    
+            <groupId>org.apache.maven.plugins</groupId>    
+            <artifactId>maven-war-plugin</artifactId>    
+            <version>2.6</version>    
+            <configuration>    
+                <webResources>    
+                    <resource>    
+                        <directory>src/main/webapp/WEB-INF</directory>    
+                        <filtering>true</filtering>    
+                        <targetPath>WEB-INF</targetPath>    
+                    </resource>    
+                </webResources>    
+            </configuration>    
+            </plugin>    
+            <!-- 自动远程部署Tomcat的插件,这里是Tomcat7 -->  
+            <plugin> 
+            <groupId>org.apache.tomcat.maven</groupId> 
+            <artifactId>tomcat7-maven-plugin</artifactId> 
+            <version>2.0-SNAPSHOT</version> 
+            <configuration> 
+                <url>http://localhost/manager/text</url>  
+                <server>tomcat7</server>
+                <username>admin</username>
+		<password>admin</password>  
+            </configuration> 
+        </plugin> 
+        </plugins>  
+    </pluginManagement>  
+  </build>
+  <repositories>
+<repository> 
+    <id>people.apache.snapshots</id> 
+    <url> 
+        http://repository.apache.org/content/groups/snapshots-group/ 
+    </url> 
+    <releases> 
+        <enabled>false</enabled> 
+    </releases> 
+    <snapshots> 
+        <enabled>true</enabled> 
+    </snapshots> 
+</repository> 
+</repositories>
+ 
+<pluginRepositories>
+<pluginRepository> 
+    <id>apache.snapshots</id> 
+    <name>Apache Snapshots</name> 
+    <url> 
+        http://repository.apache.org/content/groups/snapshots-group/ 
+    </url> 
+    <releases> 
+        <enabled>false</enabled> 
+    </releases> 
+    <snapshots> 
+        <enabled>true</enabled> 
+    </snapshots> 
+</pluginRepository>
+</pluginRepositories>
+
+  <properties>
+  	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  	<spring.version>4.0.4.RELEASE</spring.version>
+  </properties>
+  
+</project>

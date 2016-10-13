@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Oct 13 13:37:08 CST 2016
+logging-1.2.pom>=
+logging-1.2.jar>=

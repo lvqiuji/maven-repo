@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>hibernate</groupId>
+  <artifactId>javassist</artifactId>
+  <versioning>
+    <release>3.15.0</release>
+    <versions>
+      <version>3.15.0</version>
+    </versions>
+    <lastUpdated>20161012145158</lastUpdated>
+  </versioning>
+</metadata>

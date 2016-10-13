@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>mybatis</groupId>
+  <artifactId>ognl</artifactId>
+  <versioning>
+    <release>3.1.8</release>
+    <versions>
+      <version>3.1.8</version>
+    </versions>
+    <lastUpdated>20161013054019</lastUpdated>
+  </versioning>
+</metadata>

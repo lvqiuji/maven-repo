@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Oct 12 22:33:26 CST 2016
+spring-jdbc-4.0.4.pom>=
+spring-jdbc-4.0.4.jar>=
